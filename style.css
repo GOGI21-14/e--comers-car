@@ -36,22 +36,15 @@ a{
 .video {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 2fr);
-  gap: 1px;
+  gap: 5px;
   height: 20vh;
 }
 .v-one {
-  grid-column: 1;
-  grid-row: 2;
-}
-.v-two {
   grid-column: 2;
   grid-row: 2;
-}
-.v-three {
-  grid-column: 3;
-  grid-row: 2;
+  
 }
 .feel {
   grid-row: 2;
