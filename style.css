@@ -9,7 +9,7 @@
   background-size: cover;
 }
 .sticky-top {
-  background-color: #333333;
+  background-color: #cc5500;
   width: 100vw;
   height: 85px;
   transition: 1s;
@@ -18,7 +18,7 @@
 }
 a{
   text-decoration: none;
-  color: white;
+  color: #ffdb58;
 }
 .link {
   display: flex;
@@ -94,16 +94,15 @@ a{
   position: relative;
   bottom: 5px;
 }
-.footer{
-  display: flex;
-justify-content: center
-}
+
 .bottom-page{
   font-size: 4em;
   transition: 1s;
 }
 .footer{
-  background-color: #222222;
+  background-color: 	#cc5500;
+  display: flex;
+  justify-content: center
 }
 .bottom-page:hover{
   font-size: 4.5em;

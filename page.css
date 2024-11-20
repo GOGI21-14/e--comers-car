@@ -1,79 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
 }
 
-.head{ 
-    background-color: rgb(225, 138, 44); 
-    /* width: 100vw; */
-} 
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.head {
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1111336819/preview/stock-footage-aerial-top-down-drone-view-of-an-empty-lakeshore-road-in-lake-attersee.webm");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .con {
-    border: solid black 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    /* display: grid; */
-   /* grid-template-columns: repeat(6, 1fr); */
-   /* grid-template-rows: repeat(6, 1fr); */
-    /* height: 150vh ; */
-    /* width: 100vw; */
-    
-  }
-  a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .icon-home{
-    background-color: #b9c143;
-    position: sticky;
-    top: 5%;
-    left: 5%;;
-    width: 7%;
-    height: 15%;
-    border-radius: 150px;
-    /* grid-column: 1; */
-    /* grid-row: 1; */
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-  }
-  .icon-pic{
-    width: 35%;
-    height: 50%;
-  
-  }
-  .icon-home:hover{
-    width: 10%;
-    height: 17%;
-  }
-  .icon-pic:hover{
-    width: 37%;
-    height: 55%;
-  }
-  .personal-form{
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .video{
-    position: relative;
-    left:-100%;
-    bottom: -10%;
-  }
-  .content{
-    position: relative;
-    left: 65%;
-    top: 10%;
-    font-size: 1.2em;
-  }
-  .dream{
-    grid-column: 3/4;
-    grid-row: 5/6;
-    position: relative;
-    left: 65%;
-    bottom: 30%;
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 150vh;
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-home {
+  background-color: #b9c143;
+  position: sticky;
+  top: 5%;
+  left: 5%;
+  width: 7%;
+  height: 15%;
+  border-radius: 150px;
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-pic {
+  width: 35%;
+  height: 50%;
+}
+.icon-home:hover {
+  width: 10%;
+  height: 17%;
+}
+.icon-pic:hover {
+  width: 37%;
+  height: 55%;
+}
+.personal-form {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+  height: 65%;
+  width: 100%;
+  transition: 1s;
+  color: aliceblue;
+}
+.personal-form:hover {
+  background-color: rgb(40, 82, 48);
+  color: aliceblue;
+}
+.video {
+  grid-column: 2;
+  grid-row: 5 / 6;
+}
+.content {
+  grid-column: 5;
+  grid-row: 5;
+  font-size: 1.2em;
+  color: aliceblue;
+}
+.dream {
+  grid-column: 5;
+  grid-row: 3 / 4;
+  font-size: 4em;
+  color: aliceblue;
+}
+.blue-con {
+  position: relative;
+  left: 20%;
+  bottom: 0;
+  background-color: rgb(73, 152, 107);
+margin: 5%;
+  width: 50%;
+  height: 50px;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 1s;
+}
+
+.logo > img {
+  width: 40px;
+  height: 40px;
+  transition: 4s;
+}
+
+.blue-con:hover {
+  width: 65%;
+  height: 60px;
+  background-color: rgb(29, 77, 51);
+}
+.loges {
+  display: grid;
+  height: 80vh;
+  place-items: center;
+}
+.cap {
+  font-size: 2em;
+}
+.cap:hover {
+  font-size: 2.5em;
+}
+
+.logo:hover {
+  height: -20%;
+  width: -20%;
+  position: relative;
+  bottom: 5px;
+}
