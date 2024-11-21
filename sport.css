@@ -15,7 +15,7 @@ a {
   color: antiquewhite;
 }
 .icon-home {
-  background-color: 	#841a22;
+  background-color: #c4dabb;
   position: sticky;
   top: 5%;
   left: 5%;
@@ -51,12 +51,11 @@ a {
   left: 60%;
   width: 30vw;
   font-size: 2.5em;
-  /* background-color: rgb(52, 50, 50); */
-  color: #363a3d;
+  color: #498030;
 }
-h1{
-    background-color: #aa1617;
-    color: #363a3d;
+h1 {
+  background-color: #c4dabb;
+  color: #498030;
 }
 .sport-1 {
   grid-column: 2;
@@ -76,10 +75,7 @@ h1{
   width: 15%;
 }
 .blue-con {
-  position: relative;
-  /* left: 20%; */
-  bottom: 0;
-  background-color: rgb(54, 95, 176);
+  background-color: #c4dabb;
   margin: 5%;
   width: 75%;
   height: 50px;
@@ -90,19 +86,14 @@ h1{
   transition: 1s;
   font-size: 20px;
 }
-.class {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  justify-content: center;
-}
+
 .footer {
-  background-color: #aa1617;
+  background-color: #c4dabb;
   display: flex;
   justify-content: center;
   grid-column: 1/-1;
   grid-row: 6;
-  color: #363a3d;
+  color: #498030;
   font-size: 2em;
 }
 .footer:hover {
@@ -110,14 +101,43 @@ h1{
 }
 a {
   text-decoration: none;
-  color: #363a3d;
+  color: #498030;
 }
 .blue-con:hover {
   background-color: rgb(15, 221, 101);
   width: 78%;
   height: 55px;
 }
-.cart:hover{
-   
-    width: 20%;
+.cart:hover {
+  width: 20%;
+}
+@media (width <= 768px) {
+  .con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 15px;
   }
+
+  .sport-1 {
+    grid-column: 2;
+    grid-row: 2/4;
+  }
+  .sport-2 {
+    grid-column: 2;
+    grid-row: 4/6;
+  }
+  .sport-3 {
+    grid-column: 2;
+    grid-row: 6/8;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1;
+    grid-row: 9/10;
+  }
+}
