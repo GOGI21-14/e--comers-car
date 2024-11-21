@@ -137,3 +137,11 @@ a {
 
 }
 
+@media (width <= 768px){
+  .product-cta button {
+   
+    font-size: 12px;
+    width: 45%;
+   
+  }
+}

@@ -35,7 +35,7 @@ a {
   justify-content: center;
 }
 .icon-home {
-  background-color: #b9c143;
+  background-color:#113a08;
   position: sticky;
   top: 5%;
   left: 5%;
@@ -65,11 +65,10 @@ a {
   grid-row: 3 / 5;
   height: 65%;
   width: 100%;
-  transition: 1s;
+  transition: 0.5s;
   color: aliceblue;
 }
 .personal-form:hover {
-  background-color: rgb(40, 82, 48);
   color: aliceblue;
 }
 .video {
@@ -131,4 +130,105 @@ margin: 5%;
   width: -20%;
   position: relative;
   bottom: 5px;
+}
+input{
+  border-radius: 12px;
+  color: black;
+  font-style: italic;
+
+}
+input:focus{
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+select{
+  border-radius: 12px;
+  font-style: italic;
+}
+select:hover{
+  transform: scale(1.1);
+  position: relative;
+  left: 2%; 
+}
+input:hover{
+  transform: scale(1.1);
+  position: relative;
+  left: 2%;
+}
+button {
+  background-color: #113a08;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+  left: 5%;
+  bottom: 3%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b312;
+  padding: 15px;
+  position: relative;
+  left: 6%;
+  bottom: 4%;
+  font-size: 18px;
+}
+table{
+  font-size: 1.2em;
+}
+.svg{
+  width: 40px;
+  
+}
+.svg:hover{
+  width: 45px;
+}
+th:hover{
+  transform: scale(1.08);
+}
+@media (width <= 768px){
+  .con{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+  }
+  .icon-pic {
+    width: 45%;
+    height: 55%;
+  }
+  .dream {
+    grid-column: 1;
+    grid-row: 3/4;
+    font-size: 3em;
+  }
+  .video {
+    grid-column: 1;
+    grid-row: 2 / 3;
+  }
+  .content {
+    grid-column: 1;
+    grid-row: 5;
+    font-size: 1.2em;
+    color: aliceblue;
+  }
+  .personal-form {
+    grid-column: 1;
+    grid-row: 7/8;}
+    .blue-con {
+      position: relative;
+      left: 20%;
+      bottom: 0;
+    margin: 2%;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .cap {
+      font-size: 1em;
+    }
 }

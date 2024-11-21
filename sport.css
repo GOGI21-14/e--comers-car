@@ -98,6 +98,7 @@ h1 {
 }
 .footer:hover {
   font-size: 2.5em;
+  background-color: rgb(5, 56, 15);
 }
 a {
   text-decoration: none;
@@ -110,6 +111,10 @@ a {
 }
 .cart:hover {
   width: 20%;
+}
+img:hover{
+  box-shadow: 0 8px 20px rgba(196, 80, 80, 0.3);
+  transform: scale(1.1);
 }
 @media (width <= 768px) {
   .con {
