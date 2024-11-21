@@ -58,6 +58,9 @@ h1 {
   background-color: #667302;
   color: #222601;
 }
+h1:hover{
+  text-decoration: underline;
+}
 .famiely-1 {
   grid-column: 2;
   grid-row: 2/4;
@@ -123,7 +126,11 @@ img:hover{
     grid-template-rows: repeat(10, 1fr);
     gap: 15px;
   }
-
+  .header {
+    position: relative;
+    left: 30%;
+    width: 45vw;
+  }
   .famiely-1 {
     grid-column: 2;
     grid-row: 2/4;

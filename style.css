@@ -16,6 +16,12 @@
   position: sticky;
   top: 0;
 }
+.my-cars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffdb58;
+}
 a {
   text-decoration: none;
   color: #ffdb58;
@@ -51,6 +57,11 @@ a {
   grid-column: 4;
   color: rgb(231, 226, 226);
   font-size: 5em;
+}
+.feel:hover {
+  font-size: 5.5em;
+  box-shadow: 0 8px 20px black;
+  text-decoration: underline;
 }
 
 .loges {
@@ -93,6 +104,7 @@ a {
   width: -20%;
   position: relative;
   bottom: 5px;
+  box-shadow: 0 8px 20px rgba(235, 230, 230, 0.3);
 }
 
 .bottom-page {
@@ -110,18 +122,12 @@ a {
 @media (width <= 768px) {
   .con {
   }
-  .feel {
-    position: relative;
-    bottom: 30%;
-    font-size: 2em;
-    text-align: center;
-  }
+
   .link > a {
     font-size: 1.4em;
   }
   .video {
     height: 40vh;
-    /* width: 250px; */
     margin: 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -132,8 +138,10 @@ a {
     width: 100%;
   }
   .feel {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 1;
+    font-size: 3em;
+    text-align: center;
   }
 
   .blue-con {
@@ -142,7 +150,7 @@ a {
     height: 50px;
   }
   .cap {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .footer {

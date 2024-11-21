@@ -59,9 +59,12 @@
     width: 90%;
     height: auto;
     transition: 0.8s;
+    position: relative;
+    left: 5%;
   }
   .product-image:hover{
-      transform: scale(1.1);
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(6, 6, 6, 0.951);
   }
   
   .product-details {
@@ -74,6 +77,9 @@
     margin-bottom: 10px;
     color: 	#4c0308;
   }
+  .product-title:hover{
+    text-decoration: underline;
+  }
   
   .product-description {
     font-size: 16px;
@@ -83,6 +89,7 @@
   }
   .product-description:hover{
       font-size: 25px;
+      box-shadow: 0 8px 20px rgba(6, 6, 6, 0.989);
   }
   
   .product-specs {
@@ -137,12 +144,29 @@
     font-size: 27px;
   
   }
+  .footer {
+    background-color: #4c0307;
+    display: flex;
+    justify-content: center;
+    color: #498030;
+    font-size: 2em;
+    transition: 1s;
+  }
+  .footer:hover {
+    font-size: 2.5em;
+    background-color: rgb(116, 20, 12);
+  }
   @media (width <= 768px){
     .product-cta button {
      
-      font-size: 12px;
+      font-size: 15px;
       width: 45%;
      
+    }
+    .product-cta button:hover {
+      width: 48%;
+      font-size: 20px;
+    
     }
   }
   

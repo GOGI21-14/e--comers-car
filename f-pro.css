@@ -59,9 +59,12 @@ a {
   width: 90%;
   height: auto;
   transition: 0.8s;
+  position: relative;
+  left: 5%;
 }
 .product-image:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(235, 230, 230, 0.3);
 }
 
 .product-details {
@@ -74,6 +77,9 @@ a {
   margin-bottom: 10px;
   color: #8db041;
 }
+.product-title:hover{
+  text-decoration: underline;
+}
 
 .product-description {
   font-size: 16px;
@@ -83,6 +89,7 @@ a {
 }
 .product-description:hover{
     font-size: 25px;
+    box-shadow: 0 8px 20px rgba(235, 230, 230, 0.3);
 }
 
 .product-specs {
@@ -136,12 +143,27 @@ a {
   font-size: 27px;
 
 }
+.footer {
+  background-color: #667302;
+  display: flex;
+  justify-content: center;
+  color: #222601;
+  font-size: 2em;
+}
+.footer:hover {
+  font-size: 2.5em;
+}
 
 @media (width <= 768px){
   .product-cta button {
    
-    font-size: 12px;
+    font-size: 13px;
     width: 45%;
    
+  }
+  .product-cta button:hover {
+    width: 48%;
+    font-size: 20px;
+  
   }
 }
