@@ -70,7 +70,7 @@ a {
   place-items: center;
 }
 .cap {
-  font-size: 2em;
+  font-size: 2.8em;
 }
 .blue-con {
   background-color: rgb(164, 68, 68);
@@ -106,6 +106,8 @@ a {
   bottom: 5px;
   box-shadow: 0 8px 20px rgba(235, 230, 230, 0.3);
 }
+
+
 
 .bottom-page {
   font-size: 4em;
