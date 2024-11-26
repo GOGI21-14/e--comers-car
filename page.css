@@ -206,6 +206,9 @@ th:hover{
     grid-template-rows: repeat(10, 1fr);
     
   }
+  .icon-home {
+width: 15%;
+  }
   .icon-pic {
     width: 45%;
     height: 55%;

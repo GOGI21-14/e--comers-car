@@ -145,6 +145,8 @@ a {
     font-size: 3em;
     text-align: center;
   }
+  .feel:hover {
+    font-size: 3.5em;}
 
   .blue-con {
     background-color: rgb(164, 68, 68);
@@ -153,6 +155,9 @@ a {
   }
   .cap {
     font-size: 1em;
+  }
+  .cap:hover {
+    font-size: 1.04em;
   }
 
   .footer {
